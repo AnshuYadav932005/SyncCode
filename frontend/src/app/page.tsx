@@ -69,7 +69,7 @@ export default function LandingPage() {
     const trimmedRoom = joinRoomId.trim();
     if (!trimmedUser) { setJoinError("Please enter a username."); return; }
     if (!trimmedRoom) { setJoinError("Please enter a room ID."); return; }
-    localStorage.setItem("collabcode_username", trimmedUser);
+    localStorage.setItem("synccode_username", trimmedUser);
     router.push(`/editor?room=${encodeURIComponent(trimmedRoom)}`);
   };
 
@@ -84,7 +84,7 @@ export default function LandingPage() {
       {/* ── Navbar ─────────────────────────────────────────────────────── */}
       <nav className="border-b border-slate-800/80 px-6 py-3.5 flex items-center gap-4 sticky top-0 bg-[#0a0a0a]/95 backdrop-blur-sm z-40">
         <span className="text-base font-bold tracking-tight text-white select-none">
-          ⚡ CollabCode
+          ⚡ SyncCode
         </span>
         <span className="hidden sm:inline text-slate-600 text-xs">|</span>
         <span className="hidden sm:inline text-xs text-slate-500">
@@ -92,7 +92,7 @@ export default function LandingPage() {
         </span>
         <div className="ml-auto">
           <a
-            href="https://github.com/aniruddh-batwal07/CollabCode"
+            href="https://github.com/AnshuYadav932005/SyncCode"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-slate-200 border border-slate-700 rounded px-3 py-1.5 transition-colors"
@@ -114,7 +114,7 @@ export default function LandingPage() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl font-bold text-white leading-tight tracking-tight mb-4">
-            CollabCode
+            SyncCode
           </h1>
           <p className="text-slate-300 text-xl mb-4 font-light">
             Real-Time Collaborative Code Editor
@@ -179,23 +179,15 @@ export default function LandingPage() {
 
       {/* ── Footer ─────────────────────────────────────────────────────── */}
       <footer className="border-t border-slate-800 px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-600">
-        <span>Built by <span className="text-slate-400 font-medium">Aniruddh Batwal</span></span>
+        <span>Built by <span className="text-slate-400 font-medium">Anshu Yadav</span></span>
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/aniruddh-batwal07"
+            href="https://github.com/AnshuYadav932005"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-slate-300 transition-colors"
           >
             GitHub
-          </a>
-          <a
-            href="https://linkedin.com/in/aniruddhbatwal"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-slate-300 transition-colors"
-          >
-            LinkedIn
           </a>
         </div>
       </footer>

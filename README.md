@@ -1,6 +1,6 @@
 <div align="center">
 
-# CollabCode
+# SyncCode
 
 **A real-time collaborative code editor built for teams — edit, sync, and version code simultaneously, from anywhere.**
 
@@ -14,7 +14,7 @@
 
 ---
 
-CollabCode is a production-grade real-time collaborative code editor inspired by **Google Docs**, **VSCode Live Share**, and **Replit Multiplayer**. Multiple developers can write and edit code in a shared room simultaneously — with conflict-free CRDT merging, live cursors, version history, and an isolated code execution sandbox.
+SyncCode is a production-grade real-time collaborative code editor inspired by **Google Docs**, **VSCode Live Share**, and **Replit Multiplayer**. Multiple developers can write and edit code in a shared room simultaneously — with conflict-free CRDT merging, live cursors, version history, and an isolated code execution sandbox.
 
 ---
 
@@ -172,7 +172,7 @@ Stores **point-in-time version captures**. Snapshots are taken automatically eve
 ## Project Structure
 
 ```
-collabcode/
+synccode/
 ├── frontend/                  # Next.js application
 │   └── src/
 │       ├── app/               # App Router pages and layout
@@ -210,8 +210,8 @@ collabcode/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/aniruddh-batwal07/CollabCode.git
-cd CollabCode
+git clone https://github.com/AnshuYadav932005/SyncCode.git
+cd SyncCode
 ```
 
 ### 2. Start Infrastructure
@@ -242,7 +242,7 @@ The frontend starts on `http://localhost:3000`.
 
 ### 5. Open a Room
 
-Navigate to `http://localhost:3000`. You will see the CollabCode landing page.
+Navigate to `http://localhost:3000`. You will see the SyncCode landing page.
 
 - Click **+ Create Room** to auto-generate a room ID. Copy it from the modal, enter a username, and click **Create →**.
 - Or click **→ Join Room**, paste an existing room ID, enter a username, and click **Join →**.
@@ -300,6 +300,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 <div align="center">
 
-Built by [Aniruddh Batwal](https://github.com/aniruddh-batwal07)
+Built by [Anshu Yadav](https://github.com/AnshuYadav932005)
 
 </div>

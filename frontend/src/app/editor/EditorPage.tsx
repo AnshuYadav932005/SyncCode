@@ -38,7 +38,7 @@ export default function EditorPage() {
   // Redirect to landing if room or username is missing
   useEffect(() => {
     if (!roomId) { router.replace("/"); return; }
-    const stored = localStorage.getItem("collabcode_username") ?? "";
+    const stored = localStorage.getItem("synccode_username") ?? "";
     if (!stored) { router.replace("/"); return; }
     setUsername(stored);
   }, [roomId, router]);
@@ -228,7 +228,7 @@ export default function EditorPage() {
           onClick={() => router.push("/")}
           className="text-sm font-bold tracking-tight text-white whitespace-nowrap hover:text-slate-300 transition-colors"
         >
-          ⚡ CollabCode
+          ⚡ SyncCode
         </button>
 
         <span className="text-slate-700">|</span>

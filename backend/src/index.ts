@@ -43,7 +43,7 @@ const io = new Server(server, {
 });
 
 app.get("/", (_, res) => {
-  res.send("CollabCode backend running");
+  res.send("SyncCode backend running");
 });
 
 io.on("connection", (socket) => {
