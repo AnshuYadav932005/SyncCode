@@ -302,4 +302,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 Built by [Aniruddh Batwal](https://github.com/aniruddh-batwal07)
 
-</div>
+</div>#   S y n c C o d e  
+ 
